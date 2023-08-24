@@ -624,7 +624,7 @@
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message" id="error-message"></div>
-                <div class="sent-message" id="success">The message sent successfully</div>
+                <div class="sent-message" id="success"></div>
               </div>
               <div class="text-center"><button type="submit" id="btnContact">Send Message</button></div>
             </form>
@@ -704,6 +704,7 @@
     if(message=="OK")
     {
       document.getElementById('error-message').innerHTML = '';
+      document.getElementById('success').innerHTML = 'The message sent successfully';
       document.getElementById('error-message').style.background = 'none';
       document.getElementById('success').style.background = '#e49ae7';
       document.getElementById('name').value=""
@@ -711,12 +712,13 @@
       document.getElementById('subject').value=""
       document.getElementById('message').value=""
       document.getElementById('loading').style.display='none'
+      document.getElementById('success').style.display='none'
 
     } 
     else{
       document.getElementById('loading').style.display='none'
       document.getElementById('error-message').innerHTML = 'An error has occurred';
-      document.getElementById('error-message').style.background = '#f07f60';
+      document.getElementById('error-message').style.background = '#f57d7d';
     }
   }
 );}
