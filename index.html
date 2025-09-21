@@ -1,355 +1,1241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amani Hadda - Portfolio</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body data-theme="dark">
-    <button class="theme-toggle">
-      <i class="fas fa-sun"></i>
-    </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amani Hadda - Full-Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <div class="container">
-      <section class="profile-section">
-        <div class="profile-container">
-          <div class="profile-circle"></div>
-          <img
-            class="profile-img"
-            src="./assets/img/profile/profile.png"
-            alt="Amani Hadda"
-          />
-        </div>
-        <h1 class="profile-title">Amani Hadda</h1>
-        <h2 class="profile-subtitle">
-          Full-stack web developer | React | Laravel | Flask | DevOps | AI
-        </h2>
-        <p class="profile-description">
-          I'm a dedicated full-stack developer with over 1 year of experience
-          building custom, complex websites using the MERN stack, Laravel, and
-          Flask. Alongside my web development skills, I have a solid foundation
-          in DevOps and am currently expanding my expertise in AI.
-        </p>
-        <div class="contact-info">
-          <a href="#"><i class="fas fa-map-marker-alt"></i> Tunisia</a>
-          <a href="mailto:contact.amanihadda@gmail.com"
-            ><i class="fas fa-envelope"></i> contact.amanihadda@gmail.com</a
-          >
-          <a href="tel:+21693863919"
-            ><i class="fas fa-phone"></i> (+216) 93863919</a
-          >
-        </div>
-        <a
-          href="./assets/resume/AmaniHaddaResume.pdf"
-          class="download-btn"
-          download
-        >
-          <i class="fas fa-download"></i> Download Resume
-        </a>
-      </section>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #f43f5e;
+            --accent: #10b981;
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-tertiary: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border: #475569;
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
 
-      <section class="timeline">
-        <h2>Professional Experience</h2>
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fas fa-briefcase"></i>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3 class="timeline-company">Tac-Tic</h3>
-              <span class="timeline-date">Aug 2024 - Present</span>
-            </div>
-            <p class="timeline-role">Software Engineer</p>
-            <p>
-              Designed AI-integrated camera features to automate the detection
-              of animals and intruders, including facial recognition, enhancing
-              security and simplifying surveillance.
-            </p>
-            <p>
-              Collaborated on full-stack projects using Laravel, React, and
-              MySQL, focusing on performance optimization and user experience.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fas fa-briefcase"></i>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3 class="timeline-company">SHS Social Hosting Services</h3>
-              <span class="timeline-date">Mar 2024 - Present</span>
-            </div>
-            <p class="timeline-role">Freelancer</p>
-            <p>
-              Developed a web application for managing hotels, rooms, and
-              reservations using Flask, React (TypeScript), and PostgreSQL.
-            </p>
-            <p>
-              Key features: user authentication, interactive dashboards, CI/CD
-              pipelines, and optimized data management.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fas fa-briefcase"></i>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3 class="timeline-company">Tac-Tic</h3>
-              <span class="timeline-date">Feb 2024 - Jul 2024</span>
-            </div>
-            <p class="timeline-role">Intern</p>
-            <p>
-              Designed and developed a web application using Laravel, React, and
-              MySQL, employing low-code techniques for creating administrative
-              applications and websites with CI/CD pipelines.
-            </p>
-            <p>
-              Created an AI module, DiagramBot, to automatically extract
-              entities and attributes from class diagrams using Python.
-            </p>
-            <p>
-              Developed Vitrino, an AI module based on Python, Flask, and NLP
-              techniques, capable of predicting a website's category from its
-              description. The project integrates a Random Forest classifier, a
-              GPT-2 model, and the GrapesJS visual editor for a high-performance
-              and intuitive solution.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fas fa-briefcase"></i>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3 class="timeline-company">Ipact Consult</h3>
-              <span class="timeline-date">Oct 2023 - Feb 2024</span>
-            </div>
-            <p class="timeline-role">Freelancer</p>
-            <p>
-              Designed and developed a robust claim management application using
-              NestJS, ReactJS, and MongoDB, integrating key features such as
-              secure user authentication, real-time data processing, and an
-              interactive, user-friendly dashboard.
-            </p>
-          </div>
-        </div>
-        <!-- Add other timeline items similarly -->
-      </section>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-      <section class="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3><i class="fas fa-server"></i> Backend</h3>
-            <div class="skill-list">
-              <span class="skill-tag">Laravel</span>
-              <span class="skill-tag">Flask</span>
-              <span class="skill-tag">NestJS</span>
-              <span class="skill-tag">ExpressJS</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="fas fa-desktop"></i> Frontend</h3>
-            <div class="skill-list">
-              <span class="skill-tag">React</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="fas fa-desktop"></i> DataBase</h3>
-            <div class="skill-list">
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">SQLite</span>
-              <span class="skill-tag">MongoDB</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="fas fa-desktop"></i> Devops</h3>
-            <div class="skill-list">
-              <span class="skill-tag">Jenkins</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">SonarQube</span>
-            </div>
-          </div>
-          <!-- Add other skill cards similarly -->
-        </div>
-      </section>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-      <section class="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-content">
-              <h3 class="project-title">EBAS</h3>
-              <p class="project-description">
-                A comprehensive web application for managing hotels, rooms, and
-                reservations with interactive dashboards and optimized data
-                management.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-tag">Flask</span>
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">PostgreSQL</span>
-              </div>
-              <!-- <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fas fa-globe"></i> Live Demo
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i> Source Code
-                </a>
-              </div> -->
-              <span class="project-status status-in-progress">In Progress</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-content">
-              <h3 class="project-title">Tac-Tic Linker</h3>
-              <p class="project-description">
-                Designed and developed a web application using Laravel, React,
-                and MySQL, employing low-code techniques to build administrative
-                applications and websites, with the implementation of CI/CD
-                pipelines.
-              </p>
-              <p class="project-description">
-                Created an AI module, DiagramBot, to automatically extract
-                entities and attributes from class diagrams using Python.
-              </p>
-              <p class="project-description">
-                Developed Vitrino, a Python-based AI module leveraging NLP
-                techniques, capable of predicting a website's category based on
-                its description. The project integrates a Random Forest
-                classifier, a GPT-2 model, and the visual editor GrapesJS for a
-                high-performing and intuitive solution.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Flask</span>
-                <span class="tech-tag">NLP</span>
-                <span class="tech-tag">GPT-2</span>
-              </div>
-              <span class="project-status status-completed">Completed</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-content">
-              <h3 class="project-title">Cliclaim</h3>
-              <p class="project-description">
-                Architected and developed a robust claims management application
-                using NestJS and ReactJS, integrating essential features such as
-                secure user authentication, real-time data processing, and an
-                interactive, user-friendly dashboard.
-              </p>
-              <p class="project-description">
-                Focused on performance optimization and intuitive UI design,
-                enabling seamless and efficient claim tracking for users.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-tag">NestJS</span>
-                <span class="tech-tag">ReactJS</span>
-                <span class="tech-tag">WebSocket</span>
-                <span class="tech-tag">Jenkins</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">SonarQube</span>
-              </div>
-              <span class="project-status status-in-progress">In Progress</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-content">
-              <h3 class="project-title">Fashion clothing rental</h3>
-              <p class="project-description">
-                This project is an e-commerce application developed using the
-                mern stack . It is specifically designed for renting luxury
-                clothes.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-tag">ExpressJS</span>
-                <span class="tech-tag">ReactJS</span>
-                <span class="tech-tag">Jenkins</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">SonarQube</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://drive.google.com/file/d/1n1S171oO26Y42WLiLKlOfsU49DLLkfrU/view"
-                  class="project-link"
-                >
-                  <i class="fas fa-globe"></i> Live Demo
-                </a>
-              </div>
-              <span class="project-status status-completed">Completed</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-content">
-              <h3 class="project-title">Farmer to consumer</h3>
-              <p class="project-description">
-                This application aims to directly connect small farmers in rural
-                areas with consumers in urban areas and promote ethical and
-                sustainable farming practices.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-tag">ExpressJS</span>
-                <span class="tech-tag">ReactJS</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">AI</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://www.youtube.com/watch?v=IWzXbqu4npc"
-                  class="project-link"
-                >
-                  <i class="fas fa-globe"></i> Live Demo
-                </a>
-              </div>
-              <span class="project-status status-completed">Completed</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="projects">
-        <h2>Contact</h2>
-        <div class="project-card">
-          <div class="project-content">
-            <div class="project-tech-stack">
-              <span class="tech-tag">contact.amanihada@gmail.com</span>
-              <span class="tech-tag">(+216) 93863919</span>
-            </div>
-          </div>
-        </div>
-      </section>
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
 
-      <footer>
-        <div class="footer-content">
-          <p>
-            &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            Amani Hadda. All rights reserved.
-          </p>
-          <div class="social-links">
-            <a href="https://linkedin.com/in/amani-hadda" target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/AmaniHadda" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </div>
+        nav.scrolled {
+            background: rgba(15, 23, 42, 0.98);
+            box-shadow: var(--shadow);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background: var(--gradient);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(244, 63, 94, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .gradient-text {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .hero-text .description {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: white;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--text-muted);
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary);
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .profile-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .profile-bg {
+            position: absolute;
+            inset: 0;
+            background: var(--gradient);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .profile-img {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 10px solid var(--bg-primary);
+            top: 10px;
+            left: 10px;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img img:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-img .fallback-icon {
+            font-size: 4rem;
+            color: var(--text-muted);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--gradient);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+
+        .timeline-content {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            width: 45%;
+            position: relative;
+            border: 1px solid var(--border);
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            background: var(--gradient);
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            left: -60px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            right: -60px;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-company {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .timeline-date {
+            background: var(--bg-tertiary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .timeline-role {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .timeline-content p {
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .skill-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
+        .skill-tag {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            padding: 0.375rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: var(--primary);
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .project-tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            padding: 0.375rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: var(--primary-dark);
+        }
+
+        .project-status {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.375rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .status-completed {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent);
+        }
+
+        .status-in-progress {
+            background: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            padding: 3rem;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .contact h2 {
+            margin-bottom: 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .contact-item a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                flex-direction: row !important;
+                text-align: left !important;
+            }
+
+            .timeline-content {
+                width: calc(100% - 80px);
+                margin-left: 60px;
+            }
+
+            .timeline-content::before {
+                left: -60px !important;
+            }
+
+            .timeline-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                justify-content: center;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Loading animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">Amani Hadda</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
         </div>
-      </footer>
-    </div>
-    <script src="./assets/js/script.js"></script>
-  </body>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="gradient-text">Amani Hadda</span></h1>
+                    <p class="subtitle">Full-stack Developer & AI Enthusiast</p>
+                    <p class="description">
+                        I craft exceptional digital experiences with over 1 year of expertise in full-stack development,
+                        specializing in React, Laravel, Flask, and emerging AI technologies. Passionate about building
+                        scalable, innovative solutions that make a difference.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                    <div class="contact-info">
+                        <a href="mailto:contact.amanihadda@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            contact.amanihadda@gmail.com
+                        </a>
+                        <a href="tel:+21693863919">
+                            <i class="fas fa-phone"></i>
+                            (+216) 93863919
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Tunisia
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-bg"></div>
+                        <div class="profile-img">
+                            <img src="./assets/img/profile/profile.png" alt="Amani Hadda - Profile Picture" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                            <div class="fallback-icon" style="display:none;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Professional <span class="gradient-text">Experience</span></h2>
+                <p>My journey in software development and the exciting projects I've worked on</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-company">Tac-Tic</h3>
+                            <span class="timeline-date">Aug 2024 - Present</span>
+                        </div>
+                        <p class="timeline-role">Software Engineer</p>
+                        <p>Designed AI-integrated camera features to automate detection of animals and intruders, including facial recognition, enhancing security and simplifying surveillance.</p>
+                        <p>Collaborated on full-stack projects using Laravel, React, and MySQL, focusing on performance optimization and user experience.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-company">SHS Social Hosting Services</h3>
+                            <span class="timeline-date">Mar 2024 - Present</span>
+                        </div>
+                        <p class="timeline-role">Freelancer</p>
+                        <p>Developed a comprehensive web application for managing hotels, rooms, and reservations using Flask, React (TypeScript), and PostgreSQL.</p>
+                        <p>Key features: user authentication, interactive dashboards, CI/CD pipelines, and optimized data management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-company">Tac-Tic</h3>
+                            <span class="timeline-date">Feb 2024 - Jul 2024</span>
+                        </div>
+                        <p class="timeline-role">Intern</p>
+                        <p>Created DiagramBot, an AI module to automatically extract entities and attributes from class diagrams using Python.</p>
+                        <p>Developed Vitrino, an AI module based on Python, Flask, and NLP techniques, capable of predicting website categories with Random Forest classifier and GPT-2 model integration.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-company">Ipact Consult</h3>
+                            <span class="timeline-date">Oct 2023 - Feb 2024</span>
+                        </div>
+                        <p class="timeline-role">Freelancer</p>
+                        <p>Designed and developed a robust claim management application using NestJS, ReactJS, and MongoDB, integrating secure authentication, real-time processing, and interactive dashboards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Technical <span class="gradient-text">Skills</span></h2>
+                <p>Technologies and tools I work with to bring ideas to life</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">NestJS</span>
+                        <span class="skill-tag">ExpressJS</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-cogs"></i>
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">SonarQube</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">GPT-2</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Version Control</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">GitLab</span>
+                        <span class="skill-tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p>A showcase of my recent work and technical achievements</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <span class="project-status status-in-progress">In Progress</span>
+                    <div class="project-content">
+                        <h3 class="project-title">EBAS - Hotel Management</h3>
+                        <p class="project-description">
+                            A comprehensive web application for managing hotels, rooms, and reservations with interactive dashboards and optimized data management.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <span class="project-status status-completed">Completed</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Tac-Tic Linker</h3>
+                        <p class="project-description">
+                            AI-powered platform featuring DiagramBot for automatic entity extraction from class diagrams and Vitrino for website category prediction using NLP techniques.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">GPT-2</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <span class="project-status status-in-progress">In Progress</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Cliclaim</h3>
+                        <p class="project-description">
+                            Architected and developed a robust claims management application with secure user authentication, real-time data processing, and interactive dashboards.
+                        </p>
+                        <p class="project-description">
+                            Focused on performance optimization and intuitive UI design, enabling seamless claim tracking for users.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">SonarQube</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <span class="project-status status-completed">Completed</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Fashion Clothing Rental</h3>
+                        <p class="project-description">
+                            E-commerce application developed using the MERN stack, specifically designed for renting luxury clothing with complete user management and payment integration.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">ExpressJS</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1n1S171oO26Y42WLiLKlOfsU49DLLkfrU/view" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <span class="project-status status-completed">Completed</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Farmer to Consumer</h3>
+                        <p class="project-description">
+                            Connecting small farmers in rural areas directly with urban consumers, promoting ethical and sustainable farming practices through an innovative marketplace platform.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">ExpressJS</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">AI Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=IWzXbqu4npc" class="project-link" target="_blank">
+                                <i class="fas fa-play"></i> Video Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Let's Work <span class="gradient-text">Together</span></h2>
+                <p>Ready to bring your ideas to life? Let's discuss your next project</p>
+            </div>
+            <div class="contact fade-in">
+                <h3>Get In Touch</h3>
+                <p style="margin-bottom: 2rem; color: var(--text-secondary);">
+                    I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and innovation.
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:contact.amanihadda@gmail.com">contact.amanihadda@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+21693863919">(+216) 93863919</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Tunisia</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-download"></i>
+                        <a href="./assets/resume/AmaniHaddaResume.pdf" download>Download Resume</a>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="mailto:contact.amanihadda@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Amani Hadda. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/amani-hadda" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/AmaniHadda" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:contact.amanihadda@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling and navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navbar = document.getElementById('navbar');
+            const sections = document.querySelectorAll('section');
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            // Navigation scroll effect
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+
+                // Active navigation link
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+
+                // Fade in animation
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('visible');
+                    }
+                });
+            });
+
+            // Smooth scrolling for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // CTA buttons smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Mobile menu toggle (basic implementation)
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navLinksContainer = document.querySelector('.nav-links');
+            
+            mobileMenu.addEventListener('click', function() {
+                navLinksContainer.style.display = 
+                    navLinksContainer.style.display === 'flex' ? 'none' : 'flex';
+            });
+
+            // Initial fade-in check
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+
+            // Typing effect for hero text (optional enhancement)
+            const heroTitle = document.querySelector('.hero-text h1');
+            if (heroTitle) {
+                heroTitle.style.opacity = '0';
+                setTimeout(() => {
+                    heroTitle.style.opacity = '1';
+                    heroTitle.style.transform = 'translateY(0)';
+                }, 300);
+            }
+
+            // Add hover effects for project cards
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add click effects for skill tags
+            const skillTags = document.querySelectorAll('.skill-tag, .tech-tag');
+            skillTags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                });
+            });
+
+            // Parallax effect for hero section
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const parallaxElements = document.querySelectorAll('.hero::before');
+                
+                parallaxElements.forEach(element => {
+                    const speed = 0.5;
+                    element.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+            });
+
+            // Add loading animation
+            document.body.style.opacity = '0';
+            window.addEventListener('load', function() {
+                document.body.style.transition = 'opacity 0.5s ease-in-out';
+                document.body.style.opacity = '1';
+            });
+        });
+
+        // Performance optimization: Throttle scroll events
+        function throttle(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Apply throttling to scroll events
+        const throttledScroll = throttle(() => {
+            // Scroll event handlers here
+        }, 16); // ~60fps
+
+        window.addEventListener('scroll', throttledScroll);
+    </script>
+</body>
 </html>
